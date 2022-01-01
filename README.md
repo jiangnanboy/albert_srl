@@ -1,6 +1,17 @@
 # albert-crf for SRL(Semantic Role Labeling)，中文语义角色标注
 
 ## 概述
+自然语言的语义理解往往包括分析构成一个事件的行为、施事、受事等主要元素，以及其他附属元素（adjuncts），例如事件发生的时间、地点、方式等。
+在事件语义学（Event semantics）中，构成一个事件的各个元素被称为语义角色（Semantic Roles）；而语义角色标注（Semantic Role Labeling）任务
+就是识别出一个句子中所有的事件及其组成元素的过程，例如：其行为（往往是句子中的谓词部分），施事，事件，地点等。下图中，例子中的一个事件“生产”被识别出来，
+而“生产”对应的施事“全行业”和受事“化肥二千七百二十万吨”以及附属的事件发生的时间“全年”被准确标注出来。语义角色标注可为许多下游任务提供支持，
+例如：更深层的语义分析（AMR Parsing，CCG Parsing等），任务型对话系统中的意图识别，事实类问答系统中的实体打分等。
+
+![image](https://raw.githubusercontent.com/jiangnanboy/albert_srl/master/image/example.png)
+
+![image](https://raw.githubusercontent.com/jiangnanboy/albert_srl/master/image/label_table.png)
+
+## 方法
 
 利用huggingface/transformers中的albert+crf进行中文语义角色标注
 

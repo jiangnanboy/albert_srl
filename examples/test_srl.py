@@ -114,14 +114,14 @@ if __name__ == '__main__':
     )
     parser.add_argument(
         "--train_path",
-        default=os.path.join(path, 'data/srl/example.train'),
+        default=os.path.join(path, 'data/example.train'),
         type=str,
         required=False,
         help="The path of training set!",
     )
     parser.add_argument(
         '--dev_path',
-        default=os.path.join(path, 'data/srl/example.dev'),
+        default=os.path.join(path, 'data/example.dev'),
         type=str,
         required=False,
         help='The path of dev set!'
